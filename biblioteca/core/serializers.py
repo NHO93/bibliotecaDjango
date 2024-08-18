@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import serializers # type: ignore
 from .models import Categoria, Autor, Livro
 
 class CategoriaSerializer(serializers.Serializer):
@@ -7,7 +7,7 @@ class CategoriaSerializer(serializers.Serializer):
 
     def create(self, validated_data):
         return Categoria.objects.create(**validated_data)
-
+    
     def update(self, instance, validated_data):
         instance.nome = validated_data.get('nome', instance.nome)
         instance.save()
@@ -39,8 +39,8 @@ class LivroSerializer(serializers.Serializer):
         instance.titulo = validated_data.get('titulo', instance.titulo)
         instance.autor = validated_data.get('autor', instance.autor)
         instance.categoria = validated_data.get('categoria',
-instance.categoria) 
+    instance.categoria)
         instance.publicado_em = validated_data.get('publicado_em',
-instance.publicado_em)
+    instance.publicado_em)
         instance.save()
         return instance
