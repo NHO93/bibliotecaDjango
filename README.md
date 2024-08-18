@@ -21,31 +21,20 @@ O objetivo do projeto é implementar um sistema de gerenciamento de biblioteca q
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/username/biblioteca-django.git
-   cd biblioteca-django
+   git clone https://github.com/NHO93/bibliotecaDjango.git
+      
    ```
 
-2. Crie um ambiente virtual e instale as dependências:
+### Testando a API:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # No Windows use venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+Utilize uma ferramenta como **Postman** ou o **cURL** no terminal para realizar as operações CRUD:
+- **Listar todos os livros:** `GET /livros/`
+- **Criar um novo livro:** `POST /livros/`
+- **Obter detalhes de um livro específico:** `GET /livros/<id>/`
+- **Atualizar um livro:** `PUT /livros/<id>/`
+- **Deletar um livro:** `DELETE /livros/<id>/`
 
-3. Crie e aplique as migrações do banco de dados:
-
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-
-4. Inicie o servidor local:
-
-   ```bash
-   python manage.py runserver
-   ```
-
+Seguindo esses passos, o projeto estará funcionando localmente no seu ambiente.
 ## Utilização
 
 - **Listar Livros**: Faça uma requisição GET para `/livros/`.
