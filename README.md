@@ -69,7 +69,3 @@ Utilize ferramentas como **Postman** para realizar testes nas seguintes rotas da
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-Este modelo pode ser adaptado conforme necessário para o seu projeto【4†source】.
