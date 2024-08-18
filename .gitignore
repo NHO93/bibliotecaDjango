@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+env/
+
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+
+# Django specific
+*.log
+db.sqlite3
+/media
+/staticfiles
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
